@@ -69,3 +69,23 @@ img {
     position: absolute;
     left: 52px;
 }
+.body {
+    font-size: 61px;
+    position: absolute;
+    top: 260px;
+    font-family: emoji;
+    left: 120px;
+}
+span {
+    position: absolute;
+    top: 73px;
+    left: 8px;
+    color: orange;
+    font-weight: bold;
+}
+img.man {
+    position: absolute;
+    left: 800px;
+    top: 126px;
+    width: 600px;
+}
