@@ -20,6 +20,7 @@ h2 {
   border: 1px solid black;
   border-radius: 20px;
 }
+
 #contact-form {
   max-width: 500px;
   margin: auto;
@@ -29,14 +30,8 @@ h2 {
   box-shadow: 8px 15px 14px rgba(0, 0, 0, 0.1);
   background-color: #005dff;
   margin-top: 90px;
-  margin-left: 648px;
 }
-img.info {
-  position: absolute;
-  top: 163px;
-  left: 295px;
-  width: 200px;
-}
+
 label {
   display: block;
   margin-bottom: 8px;
@@ -110,6 +105,13 @@ h1.welcome {
   animation: spin 1s linear infinite;
   display: none;
   margin: 20px auto;
+}
+img.ako {
+  height: 682px;
+  width: 684px;
+  position: absolute;
+  left: 915px;
+  top: 56px;
 }
 
 @keyframes spin {

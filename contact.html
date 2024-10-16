@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us - My Website</title>
+    <link rel="stylesheet" href="contact.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -13,24 +13,14 @@
       body {
         background-color: gray;
       }
-      .welcome {
-        color: white;
-        font-size: 2.5rem;
-        margin-top: 50px;
-      }
-      .color1 {
-        color: #ffcc00; /* Highlight color */
-      }
-      .pic {
-        margin-top: 20px;
-      }
-      .ako {
+      .info {
         max-width: 100%;
         height: auto;
+        margin-top: 20px;
       }
       @media (max-width: 576px) {
-        .welcome {
-          font-size: 1.8rem; /* Adjust font size for smaller screens */
+        .container {
+          padding: 0 15px; /* Add some padding on small screens */
         }
       }
     </style>
@@ -47,9 +37,8 @@
               height="30"
               class="d-inline-block align-top"
             />
-            My Website
+            Contact
           </a>
-
           <button
             class="navbar-toggler"
             type="button"
@@ -93,18 +82,69 @@
       </div>
     </header>
 
-    <div class="container text-center my-5">
-      <h1 class="welcome">Welcome to my <span class="color1">Website</span></h1>
-      <div class="spinner" id="spinner"></div>
+    <div class="container my-5">
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            class="form-control"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Send</button>
+        <div
+          class="output-message mt-3"
+          id="output-message"
+          style="display: none"
+        ></div>
+      </form>
     </div>
 
-    <div class="container text-center pic">
-      <img class="ako" src="ME.png" alt="My Picture" />
+    <div class="container text-center">
+      <img class="info" src="info.png" alt="Information" />
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="react.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
