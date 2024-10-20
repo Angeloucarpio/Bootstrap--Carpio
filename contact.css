@@ -111,9 +111,7 @@ h1.welcome {
   display: none;
   margin: 20px auto;
 }
-.nav-item:hover {
-  color: red;
-}
+
 
 @keyframes spin {
   0% {
