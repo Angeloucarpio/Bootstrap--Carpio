@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -10,6 +8,7 @@ body {
   text-align: left;
   background-color: gray;
 }
+
 h2 {
   text-align: center;
   color: #343a40;
@@ -20,6 +19,7 @@ h2 {
   border: 1px solid black;
   border-radius: 20px;
 }
+
 #contact-form {
   max-width: 500px;
   margin: auto;
@@ -31,12 +31,14 @@ h2 {
   margin-top: 90px;
   margin-left: 648px;
 }
+
 img.info {
   position: absolute;
   top: 163px;
   left: 295px;
   width: 200px;
 }
+
 label {
   display: block;
   margin-bottom: 8px;
@@ -87,17 +89,20 @@ button:hover {
   background-color: #f8d7da;
   color: #721c24;
 }
+
 span.color1 {
   color: red;
   position: absolute;
   top: 93px;
   left: 6px;
 }
+
 h1.welcome {
   font-size: 73px;
   position: absolute;
   top: 221px;
 }
+
 .spinner {
   border: 16px solid #f3f3f3;
   border-top: 16px solid red;
@@ -111,9 +116,6 @@ h1.welcome {
   display: none;
   margin: 20px auto;
 }
-.nav-item:hover {
-  color: red;
-}
 
 @keyframes spin {
   0% {
@@ -122,4 +124,43 @@ h1.welcome {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+.nav-link {
+  color: white; 
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: yellow; 
+  text-decoration: underline;
+}
+
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 15px; 
+  }
+}
+
+header {
+  background-color: #343a40;
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); 
+}
+
+
+img.info {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
